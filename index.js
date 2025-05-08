@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
 import activityRoutes from './routes/activityRoutes.js';
 import bookingRoutes from './routes/bookingRoutes.js';
+import cors from "cors";
 
 const app = express();
 app.use(cors()); 
