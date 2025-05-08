@@ -12,8 +12,6 @@ now test apis
 
 checkout demo video on how to test apis 
 
-vercel deployement link 
-https://booking-activity.vercel.app/
 
 adding postman collection link of all endpoints sigin/signup with postman and test:
 https://www.postman.com/research-saganist-51781301/s/collection/5mu316n/booking-activity-app?action=share&creator=28437659
