@@ -10,5 +10,10 @@ run command "npm start" to run the server.
 now test apis
 
 
+checkout demo video on how to test apis 
+
+vercel deployement link 
+https://booking-activity.vercel.app/
+
 adding postman collection link of all endpoints sigin/signup with postman and test:
 https://.postman.co/workspace/My-Workspace~8538669a-235d-4d7f-80ec-afbfc5cd7f04/collection/28437659-9f24d109-8361-4adb-af1d-79522e217d6d?action=share&creator=28437659
