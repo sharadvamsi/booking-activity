@@ -1,4 +1,4 @@
-clone this repository using this command -- git clone "https://github.com/sharadvamsi/booking-activity.git"
+clone this repository using this command -- git clone https://github.com/sharadvamsi/booking-activity.git
 
 navigate to folder using command cd booking-activity.
 
