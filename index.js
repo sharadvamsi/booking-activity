@@ -5,24 +5,20 @@ import authRoutes from './routes/authRoutes.js';
 import activityRoutes from './routes/activityRoutes.js';
 import bookingRoutes from './routes/bookingRoutes.js';
 
-dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors()); 
+//connecting to server 
+app.listen(5000,()=>{
+    console.log("Connected to server on port 5000");
+})
+
 app.use(express.json());
+dotenv.config();
 
-// Test route
-app.get('/', (req, res) => {
-  res.send('API is running...');
-});
-
-// MongoDB Connection
+//connect to db
 mongoose.connect(process.env.MONGO_URI)
-.then(() => console.log('MongoDB Connected'))
-.catch((err) => console.error('MongoDB connection error:', err));
-
-// Start server
-const PORT =  5000;
-app.listen(PORT, () => console.log(`Server running on port 5000`));
+.then(() => console.log("Connected to DB successfully :)"))
+.catch((err) => console.error("Connection to DB was unsuccessful:", err));
 
 
 app.use('/api/auth', authRoutes);
