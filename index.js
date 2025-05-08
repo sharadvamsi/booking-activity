@@ -13,6 +13,15 @@ app.listen(5000,()=>{
     console.log("Connected to server on port 5000");
 })
 
+app.get("/",(req,res)=>{
+   res.send([
+    "/api/auth/register        -- POST   -- Register a new user",
+    "/api/auth/login           -- POST   -- Login a user",
+    "/api/activities           -- GET    -- Get all activities",
+    "/api/bookings             -- POST   -- book an activity",
+    "/api/bookings             -- GET    -- Get my bookings",
+  ]);
+});
 app.use(express.json());
 dotenv.config();
 
